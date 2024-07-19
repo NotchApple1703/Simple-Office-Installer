@@ -1,3 +1,3 @@
-# simple_office_installer
+# Simple Office Installer
 
-A new Flutter project.
+A simple tool for deploying Office using Microsoft's Office Deployment Tool
