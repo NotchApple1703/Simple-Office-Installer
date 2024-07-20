@@ -18,7 +18,11 @@ class HomeScreen extends StatelessWidget {
       ),
       content: const SizedBox.expand(
         child: Row(
-          children: [],
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text('a'),
+            Text('b')
+          ],
         ),
       ),
     );
