@@ -17,12 +17,14 @@ class AppTheme {
   static FluentThemeData dark = FluentThemeData(
     brightness: Brightness.dark,
     accentColor: systemAccentColor,
-    scaffoldBackgroundColor: const Color.fromARGB(255, 32, 32, 32),
+    visualDensity: VisualDensity.standard,
+    scaffoldBackgroundColor: const Color.fromARGB(255, 28, 28, 28),
   );
 
   static FluentThemeData light = FluentThemeData(
     brightness: Brightness.light,
     accentColor: systemAccentColor,
+    visualDensity: VisualDensity.standard,
     scaffoldBackgroundColor: const Color.fromARGB(255, 243, 243, 243),
   );
 }
