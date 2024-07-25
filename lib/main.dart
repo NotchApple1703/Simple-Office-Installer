@@ -13,8 +13,8 @@ void main() async {
 
   WindowOptions windowOptions = const WindowOptions(
     title: 'Simple Office Installer',
-    size: Size(800, 500),
-    minimumSize: Size(800, 500),
+    size: Size(900, 500),
+    minimumSize: Size(900, 500),
     titleBarStyle: TitleBarStyle.hidden,
   );
 
