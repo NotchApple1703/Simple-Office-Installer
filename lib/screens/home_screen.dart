@@ -1,6 +1,8 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:window_manager/window_manager.dart';
 
+import 'package:simple_office_installer/widgets/card.dart';
+
 List<String> updateChannelList = const [
   'Current Channel',
   'Current Channel (Preview)',
@@ -42,9 +44,9 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Expanded(
             child: Container(
-              decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 32, 32, 32),
-                borderRadius: BorderRadius.only(
+              decoration: BoxDecoration(
+                color: FluentTheme.of(context).brightness.isDark ? const Color.fromARGB(255, 32, 32, 32) : const Color.fromARGB(255, 255, 255, 255),
+                borderRadius: const BorderRadius.only(
                   topRight: Radius.circular(20),
                 ),
               ),
@@ -108,16 +110,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                CustomCard(
                   width: 250,
                   height: 34,
-                  decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 41, 41, 41),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(4.0)),
-                      border: Border.all(
-                          color: const Color.fromARGB(255, 58, 58, 58))),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -130,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       )
                     ],
                   ),
-                ),
+                )
               ],
             ),
           )
